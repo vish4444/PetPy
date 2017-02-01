@@ -1,0 +1,55 @@
+https://www.springboard.com/learning-paths/web-development-python-django/learn/#
+
+https://www.udacity.com/course/viewer#!/c-cs253/l-48737165/m-48748025
+
+http://jsfiddle.net/WW3bh/
+
+Coding BootCamps:
+
+https://acadgild.com/help/fullstack/academy5_in?source=sem&account=google&campaign=Full-Stack-Sitelink&adgroup=Full-Stack-Sitelink&matchtype=e&network=g&device=c&devicemodel=&keyword=Acadgild&placement=&creative=73580615582&adposition=1t1&utm_source=google&utm_medium=cpc&utm_content=Full-Stack-Sitelink&utm_campaign=Full-Stack-Sitelink&gclid=CIrxsvOtq8sCFdUSaAods4gBYg - 16K online pgm
+
+http://www.codeastra.com/
+
+http://jaaga.in/study/
+
+http://www.acehacker.com/
+
+http://www.thehackingschool.com/home/curriculum.html
+
+http://www.geekskool.com/apply
+
+Utils:
+https://www.springboard.com/blog/full-stack-developer/
+
+https://www.switchup.org/research/best-coding-bootcamps
+
+http://tech.co/top-33-coding-bootcamps-2015-02
+
+http://www.skilledup.com/articles/the-ultimate-guide-to-coding-bootcamps-the-exhaustive-list
+
+https://www.coursereport.com/
+
+Tim Campos (CIO, FB), describes the knowledge worker as being a critical thinker, problem solver, career planner, creative innovator, researcher and analyst. 
+
+the traditional soft skills. Communication, collaboration, empathy & respect for different cultures and personalities.
+
+https://www.bloc.io/software-engineering-track
+
+Git Commands and Tips:
+http://nuclearsquid.com/writings/git-tricks-tips-workflows/
+
+------
+
+Brief Intro:
+I am a Software Testing Professional with over 8 years of experience in Manual/Automation Testing ; presently leading a team of developers and test engineers for a BI/DW project. I am well versed with SQL and beginners level scripting knowledge of Python. Having spent considerable amount of time finding faults I have developed an immense interest in correcting those myself in a better way but feel less equipped at times and hence want to learn full fledged programming. I have couple of projects in my mind and couple of professional aspirations which is why I want to become a full stack developer.
+
+Questions:  
+Will I learn any programming language in particular Python, C++, etc?
+
+Will there be a single mentor? I feel this way she/he will know my level of understanding, grasping and can put in additional efforts say to explain concepts that I may be weak in, say OOPS :).
+
+Do you give a certificate of completion?
+
+What about the daily timings, say if I am stuck somewhere in my project and working hard to figure it out, can i stay back? Reason for asking is, as a professional I believe in aiming for the best and not in clocking 8 hrs per day, so I am fine staying back to achieve the best and clear my understanding.
+
+Will i be allowed to work at the facility over the weekends, want to make the best use of time in these 12 weeks?
