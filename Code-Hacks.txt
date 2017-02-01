@@ -1,0 +1,25 @@
+Code hacks in Python:
+'''Code to display methods of an object in python''''
+print ([method for method in dir(comments) if callable(getattr(comments, method))])
+
+'''How python knows where to search when you try to import a module?''''
+import sys
+sys.path
+
+#sys is a built in module, its written in C and hence its source code is not avail.
+
+#you can change or update a path at runtime
+sys.path.append ('C:\\Dev\\TechnicalOperations\\Libraries\\NaviNetSyslogLibs')
+
+''''How to call a program or import another program file as a module''''
+import odbchelper 
+# here you are importing a program you created as a module, for some specific use in another pgm.
+
+params (server name, DB, UID, PW)
+
+# here you can access any public functions in that module by including the module name
+print odbchelper.BuildConnectionString (params)
+
+#here you are accessing an attribute of the BuildConnectionString func
+print odbchelper.BuildConnectionString.__doc__
+
