@@ -85,10 +85,9 @@ def FindLatestWeeklyFile (urls):
                 conndb.commit()
                 print (i, '>> The entry for this new NPPES Weekly file has been recorded successfully in the local database.')
                 WeeklyIncrementalFile (i)
-                #Outpath = UnZipFile ("C:\\Users\\"+username+"\\Downloads\\WeeklyIncrementalFile.zip")
-                #CopyWeeklyFileToTarget(Outpath, "C:\\Users\\"+username+"\\Desktop\\")
-                Outpath = UnZipFile ("D:\\NaviNet\\MDM\\NPPES_Weekly_File_Download\\WeeklyIncrementalFile.zip")
-                CopyWeeklyFileToTarget(Outpath, "\\\\qadtmdme1ap03.test1.qa\\Navimedix\\NaviNet\\MDM\\Landing\\TradingPartner\\NPPES\\Source\\")
+                Outpath = UnZipFile ("C:\\Users\\"+username+"\\Downloads\\WeeklyIncrementalFile.zip")
+                CopyWeeklyFileToTarget(Outpath, "C:\\Users\\"+username+"\\Desktop\\")
+               
                 
             except sqlite3.IntegrityError:
                 print('Record already exists')
@@ -96,8 +95,8 @@ def FindLatestWeeklyFile (urls):
 
 ### Downloads the file locally:    
 def WeeklyIncrementalFile(url):    
-    #r = urllib.request.urlretrieve(url, "C:\\Users\\"+username+"\\Downloads\\WeeklyIncrementalFile.zip")
-    r = urllib.urlretrieve(url, "D:\\NaviNet\\MDM\\NPPES_Weekly_File_Download\\WeeklyIncrementalFile.zip")
+    r = urllib.request.urlretrieve(url, "C:\\Users\\"+username+"\\Downloads\\WeeklyIncrementalFile.zip")
+    
 
 
 ### Unzips the file locally:
@@ -105,8 +104,8 @@ def UnZipFile (path):
     fh1 = open(path, 'rb')
     zip_ref1 = zipfile.ZipFile(fh1)
     for name1 in zip_ref1.namelist():
-        #Outpath = "C:\\Users\\"+username+"\\Downloads\\" + "WeeklyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
-        Outpath = "D:\\NaviNet\\MDM\\NPPES_Weekly_File_Download\\" + "WeeklyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
+        Outpath = "C:\\Users\\"+username+"\\Downloads\\" + "WeeklyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
+        
         zip_ref1.extract(name1, Outpath)
     zip_ref1.close()
     return (Outpath) 
