@@ -87,8 +87,7 @@ def FindLatestMonthlyFile (urls):
                 MonthlyIncrementalFile (i)
                 Outpath = UnZipFile ("C:\\Users\\"+username+"\\Downloads\\MonthlyIncrementalFile.zip")
                 CopyMonthlyFileToTarget(Outpath, "C:\\Users\\"+username+"\\Desktop\\")
-                #Outpath = UnZipFile ("D:\\NaviNet\\MDM\\NPPES_Monthly_File_Download\\MonthlyIncrementalFile.zip")
-                #CopyMonthlyFileToTarget(Outpath, "\\\\qadtmdme1ap03.test1.qa\\Navimedix\\NaviNet\\MDM\\Landing\\TradingPartner\\NPPES\\Source\\")
+                
                 
             except sqlite3.IntegrityError:
                 print('Record already exists')
@@ -97,7 +96,7 @@ def FindLatestMonthlyFile (urls):
 ### Downloads the file locally:    
 def MonthlyIncrementalFile(url):
     r = urllib.urlretrieve(url, "C:\\Users\\"+username+"\\Downloads\\MonthlyIncrementalFile.zip")
-    #r = urllib.urlretrieve(url, "D:\\NaviNet\\MDM\\NPPES_Monthly_File_Download\\MonthlyIncrementalFile.zip")
+    
 
 
 ### Unzips the file locally:
@@ -106,7 +105,7 @@ def UnZipFile (path):
     zip_ref1 = zipfile.ZipFile(fh1)
     for name1 in zip_ref1.namelist():
         Outpath = "C:\\Users\\"+username+"\\Downloads\\" + "MonthlyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
-        #Outpath = "D:\\NaviNet\\MDM\\NPPES_Monthly_File_Download\\" + "MonthlyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
+        
         zip_ref1.extract(name1, Outpath)
     zip_ref1.close()
     return (Outpath)
