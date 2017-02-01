@@ -84,9 +84,7 @@ def FindLatestWeeklyFile (urls):
                 ####Comment below code when you want to use the script on NN Jobs Server####
                 Outpath = UnZipFile ("C:\\Users\\"+username+"\\Downloads\\WeeklyIncrementalFile.zip")
                 CopyWeeklyFileToTarget(Outpath, "C:\\Users\\"+username+"\\Desktop\\")
-                ####Comment below code when you want to use the script Locally####
-                #Outpath = UnZipFile ("D:\\NaviNet\\MDM\\NPPES_Weekly_File_Download\\WeeklyIncrementalFile.zip")
-                #CopyWeeklyFileToTarget(Outpath, "\\\\qadtmdme1ap03.test1.qa\\Navimedix\\NaviNet\\MDM\\Landing\\TradingPartner\\NPPES\\Source\\")
+                
                 
             except sqlite3.IntegrityError:
                 print('Record already exists')
@@ -96,8 +94,7 @@ def FindLatestWeeklyFile (urls):
 def WeeklyIncrementalFile(url):
     ####Comment below code when you want to use the script on NN Jobs Server####
     r = urllib.request.urlretrieve(url, "C:\\Users\\"+username+"\\Downloads\\WeeklyIncrementalFile.zip")
-    ####Comment below code when you want to use the script Locally####
-    #r = urllib.request.urlretrieve(url, "D:\\NaviNet\\MDM\\NPPES_Weekly_File_Download\\WeeklyIncrementalFile.zip")
+    
 
 ### Unzips the file locally:
 def UnZipFile (path):
@@ -106,8 +103,7 @@ def UnZipFile (path):
     for name1 in zip_ref1.namelist():
         ####Comment below code when you want to use the script on NN Jobs Server####
         Outpath = "C:\\Users\\"+username+"\\Downloads\\" + "WeeklyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
-        ####Comment below code when you want to use the script Locally####
-        #Outpath = "D:\\NaviNet\\MDM\\NPPES_Weekly_File_Download\\" + "WeeklyIncrementalFile_UnZipped_" + datetime.datetime.now().strftime('%m-%d-%Y') + "\\"
+       
         zip_ref1.extract(name1, Outpath)
     zip_ref1.close()
     return (Outpath) 
