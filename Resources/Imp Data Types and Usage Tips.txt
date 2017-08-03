@@ -1,0 +1,47 @@
+Python: Imp Data Types and Usage Tips
+
+#the comma is required when defining a tuple with one element.
+
+#Trying to concatenate a string with a nonstring raises an exception. Unlike string formatting, string
+#concatenation works only when everything is already a string.
+
+>>> li = [1, 9, 8, 4]
+>>> [elem*2 for elem in li]
+[2, 18, 16, 8]
+>>> li
+[1, 9, 8, 4]
+>>> li = [elem*2 for elem in li]
+>>> li
+[2, 18, 16, 8]
+
+>>> params = {"server":"mpilgrim", "database":"master", "uid":"sa", "pwd":"secret"}
+>>> params.keys()
+['server', 'uid', 'database', 'pwd']
+>>> params.values()
+['mpilgrim', 'sa', 'master', 'secret']
+>>> params.items()
+[('server', 'mpilgrim'), ('uid', 'sa'), ('database', 'master'), ('pwd', 'secret')]
+>>> params = {"server":"mpilgrim", "database":"master", "uid":"sa", "pwd":"secret"}
+>>> params.items()
+[('server', 'mpilgrim'), ('uid', 'sa'), ('database', 'master'), ('pwd', 'secret')]
+
+>>> [k for k, v in params.items()]
+['server', 'uid', 'database', 'pwd']
+>>> [v for k, v in params.items()]
+['mpilgrim', 'sa', 'master', 'secret']
+>>> ["%s=%s" % (k, v) for k, v in params.items()]
+['server=mpilgrim', 'uid=sa', 'database=master', 'pwd=secret']
+
+>>> ";".join(["%s=%s" % (k, v) for k, v in params.items()])
+'server=mpilgrim;uid=sa;database=master;pwd=secret'
+#join works only on lists of strings; it does not do any type coercion. Joining a list that has one or more non−string elements will raise an exception.
+
+#Splitting a string: split is reverse of join, splits the string into multi-element list.
+>>> li = ['server=mpilgrim', 'uid=sa', 'database=master', 'pwd=secret']
+>>> s = ";".join(li)
+>>> s
+'server=mpilgrim;uid=sa;database=master;pwd=secret'
+>>> s.split(";")
+['server=mpilgrim', 'uid=sa', 'database=master', 'pwd=secret']
+>>> s.split(";", 1)
+['server=mpilgrim', 'uid=sa;database=master;pwd=secret']
