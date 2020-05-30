@@ -44,7 +44,7 @@ def call_main_func(mydir):
     RobotLogFile = 'log.html'
     RobotOutputFile = 'output.xml'
     RobotReportFile = 'report.html'
-    RobotResultRecipients = ['vmundlye@verasolutions.org']
+    RobotResultRecipients = ['vmundlye@test.com']
 
 #Find all Selenium screenshot files
     for root, directories, files in os.walk(mydir):
